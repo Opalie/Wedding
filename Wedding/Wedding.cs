@@ -73,13 +73,8 @@ namespace WeddingMod
         public override void Entry(IModHelper helper)
         {
             helper.Events.Player.Warped += Player_Warped;
-            helper.Events.GameLoop.DayStarted += GameLoop_DayStarted;
+            helper.Events.GameLoop.DayStarted += setup;
 
-        }
-
-        private void GameLoop_DayStarted(object sender, DayStartedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         /// <summary>The method called after a new day starts.</summary>
