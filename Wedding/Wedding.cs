@@ -21,13 +21,15 @@ namespace WeddingMod
         private string MapPath = "assets/wedding.tbin";
 
         /// <summary>The player's tile position in the wedding map.</summary>
-        private readonly Vector2 PlayerPixels = new Vector2(1730, 4048);
+        private readonly Vector2 PlayerPixels = new Vector2(1732, 4052);
 
         /// <summary>The question before the wedding.</summary>
 
-        public void setUp()
+        public void setup(object sender, DayStartedEventArgs e)
         {
-            Game1.player.currentLocation.createQuestionDialogue(
+            if (Game1.weddingToday)
+            {
+                Game1.player.currentLocation.createQuestionDialogue(
                             this.Helper.Translation.Get("Wedding_Question"),
                 new[]
                 {
@@ -53,11 +55,13 @@ namespace WeddingMod
                             break;
                         case "Where the Flower Dance takes place!":
                             MapPath = "assets/WeddingFlower.tbin";
+
                             // Load Flower Dance
                             break;
                     }
                 }
                 );
+            }
         }
 
 
@@ -69,7 +73,13 @@ namespace WeddingMod
         public override void Entry(IModHelper helper)
         {
             helper.Events.Player.Warped += Player_Warped;
+            helper.Events.GameLoop.DayStarted += GameLoop_DayStarted;
 
+        }
+
+        private void GameLoop_DayStarted(object sender, DayStartedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>The method called after a new day starts.</summary>
@@ -93,7 +103,7 @@ namespace WeddingMod
                 newLocation.currentEvent = oldLocation.currentEvent;
                 newLocation.Map.LoadTileSheets(Game1.mapDisplayDevice);
 
-                // move player position within forest (if needed)
+                // move player position within map (if needed)
                 Game1.player.Position = this.PlayerPixels;
             }
         }
