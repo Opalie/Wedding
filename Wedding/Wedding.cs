@@ -37,7 +37,7 @@ namespace WeddingMod
                 {
                     new Response("On the Beach.",this.Helper.Translation.Get("Wedding_Beach")),
                     new Response("In the Forest, near the river.",this.Helper.Translation.Get("Wedding_Forest")),
-                    new Response("In the Deep Woods.",this.Helper.Translation.Get("Wedding_Wood")),
+                    new Response("In the Secret Woods.",this.Helper.Translation.Get("Wedding_Wood")),
                     new Response("Where the Flower Dance takes place!",this.Helper.Translation.Get("Wedding_Flower"))
                 };
                 /*
@@ -107,7 +107,7 @@ namespace WeddingMod
                     SetUpMaps();
                     // Load Forest
                     break;
-                case "In the Deep Woods.":
+                case "In the Secret Woods.":
                     MapPath = "assets/WeddingWoods.tbin";
                     SetUpMaps();
                     // Load Wood
