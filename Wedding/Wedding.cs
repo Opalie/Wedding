@@ -146,10 +146,6 @@ namespace WeddingMod
 
             newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(540, 1196, 98, 54), 99999f, 1, 99999, new Vector2(25f, 60f) * 64f + new Vector2(0.0f, -64f), false, false, 1f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
             newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(540, 1250, 98, 25), 99999f, 1, 99999, new Vector2(25f, 60f) * 64f + new Vector2(0.0f, 54f) * 4f + new Vector2(0.0f, -64f), false, false, 0.0f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
-            newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(527, 1249, 12, 25), 99999f, 1, 99999, new Vector2(24f, 62f) * 64f, false, false, 0.0f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
-            newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(527, 1249, 12, 25), 99999f, 1, 99999, new Vector2(32f, 62f) * 64f, false, false, 0.0f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
-            newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(527, 1249, 12, 25), 99999f, 1, 99999, new Vector2(24f, 69f) * 64f, false, false, 1f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
-            newLocation.TemporarySprites.Add(new TemporaryAnimatedSprite("LooseSprites\\Cursors", new Microsoft.Xna.Framework.Rectangle(527, 1249, 12, 25), 99999f, 1, 99999, new Vector2(32f, 69f) * 64f, false, false, 1f, 0.0f, Color.White, 4f, 0.0f, 0.0f, 0.0f, false));
         }
     }
 }
